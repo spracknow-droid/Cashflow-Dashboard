@@ -326,14 +326,3 @@ Original file is located at
 #     except Exception as e:
 #         st.sidebar.error(f"파일을 처리하는 중 오류가 발생했습니다: {e}")
 #
-
-import os
-from pyngrok import ngrok
-
-# 여기에 발급받은 실제 토큰을 붙여넣으세요.
-ngrok_token = "31tQ7vgtLDWYnSCoFpbcEWyYynT_6k9LBhyMBVwBwPojUzpct"
-os.environ["NGROK_AUTH_TOKEN"] = ngrok_token
-ngrok.set_auth_token(ngrok_token)
-
-public_url = ngrok.connect(8501)
-print("Streamlit 앱 주소:", public_url)
