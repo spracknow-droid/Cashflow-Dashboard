@@ -6,3 +6,4 @@ python-dateutil
 streamlit-plotly-events
 openpyxl
 pyngrok
+
