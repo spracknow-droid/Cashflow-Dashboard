@@ -337,5 +337,3 @@ ngrok.set_auth_token(ngrok_token)
 
 public_url = ngrok.connect(8501)
 print("Streamlit 앱 주소:", public_url)
-
-!streamlit run app.py &>/dev/null&
