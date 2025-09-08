@@ -7,13 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1hyhZl6iSi496GhXnjLVxg-4b-gzac1Ed
 """
 
-!pip install streamlit
-!pip install streamlit_colab
-!pip install streamlit-plotly-events
-!pip install pyngrok
-!pip install openpyxl
-!pip install streamlit-plotly-events
-
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile app.py
 # 
