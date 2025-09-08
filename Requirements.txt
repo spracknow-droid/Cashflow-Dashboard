@@ -1,5 +1,7 @@
 streamlit
-streamlit_colab
+pandas
+plotly
+numpy
+python-dateutil
 streamlit-plotly-events
-pyngrok
 openpyxl
