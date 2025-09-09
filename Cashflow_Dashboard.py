@@ -14,6 +14,14 @@ st.set_page_config(layout="wide")
 
 st.title('현금흐름 대시보드')
 
+# ---
+# Sidebar: 엑셀 파일 업로드 및 처리
+# ---
+st.sidebar.header('엑셀 파일 처리')
+
+# 엑셀 파일 업로드 기능 추가
+uploaded_file = st.sidebar.file_uploader("엑셀 파일을 업로드하세요", type=['xls', 'xlsx'])
+
 # 사용자가 파일을 업로드하기 전 표시될 안내 텍스트
 # 이 부분은 'if uploaded_file:' 블록 외부에 위치하여 파일 업로드 전에 항상 보입니다.
 if not uploaded_file:
@@ -34,14 +42,6 @@ if not uploaded_file:
     st.info("시작하려면 왼쪽 사이드바에 엑셀 파일을 업로드하세요.")
 # ---
 
-
-# ---
-# Sidebar: 엑셀 파일 업로드 및 처리
-# ---
-st.sidebar.header('엑셀 파일 처리')
-
-# 엑셀 파일 업로드 기능 추가
-uploaded_file = st.sidebar.file_uploader("엑셀 파일을 업로드하세요", type=['xls', 'xlsx'])
 
 # 불필요한 컬럼 목록
 columns_to_drop = [
